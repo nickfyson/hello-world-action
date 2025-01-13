@@ -1,0 +1,9 @@
+on: [push, workflow_dispatch]
+
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to say hello
+    steps:
+      - uses: actions/checkout@v4
+      - uses: nickfyson/action-grabber/putter
